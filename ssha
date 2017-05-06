@@ -1,0 +1,7 @@
+#!/bin/bash
+echo
+echo "SSH  metodo diffie-hellman-group1-sha1 https://www.openssh.com/legacy.html"
+echo "(c) hackingyseguridad.com 2017"
+echo "Uso: # ssh1 usuario@host OPCIONES"
+echo
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 $1 $2 $3 $4 $5
