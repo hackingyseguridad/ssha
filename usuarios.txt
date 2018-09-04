@@ -37,3 +37,10 @@ access
 123123
 666666
 internet
+mysql
+info
+guest
+oracle
+cisco
+nagios
+postgres
