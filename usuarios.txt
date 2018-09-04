@@ -6,6 +6,7 @@ administrador
 Administrator
 administrator
 user
+user1
 1234
 12345
 123456
