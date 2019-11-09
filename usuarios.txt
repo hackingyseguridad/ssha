@@ -4,6 +4,9 @@ Administrador
 Administrator
 user
 user1
+user2
+user3
+user4
 1234
 12345
 123456
@@ -17,6 +20,7 @@ p4ssw0rd
 anonymous
 Admin12345
 usuario
+usuario2
 supervisor
 admin1234
 4321
@@ -82,7 +86,6 @@ princess
 iloveyou
 qwerty
 sunshine
-" o 1 = 1 --
 toor
 siadmin
 soadmin
@@ -113,3 +116,4 @@ webadmin
 netamin
 sysadmin
 netuser
+adminsupport
