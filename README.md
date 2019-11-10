@@ -2,7 +2,7 @@
 
 # ssha.sh
 
-ssha <IP> 
+ssha usuario@IP 
   
 SSH single method diffie-hellman-group1-sha1
 
