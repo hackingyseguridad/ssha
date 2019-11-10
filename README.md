@@ -26,6 +26,13 @@ Explotar vulnerabilidad 2018-15473 OpenSSH 2.3 < 7.7 Username Enumeration.
 Muestra usuarios existentes en SSH, con diccionario usuarios.txt. 
 Explotar vulnerabilidad 2018-15473 OpenSSH 2.3 < 7.7 Username Enumeration
 
+# sshbrute.sh
+
+Test para intentar obtener credenciales de acceso a SSH con diccionario usuarios.txt y claves.txt
+
+
+www.hackingyseguridad.com
+
 
 
 
