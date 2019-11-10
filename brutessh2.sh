@@ -6,7 +6,7 @@ INFO
 if [ -z "$1" ]; then
         echo
         echo "Fuerza bruta con diccionarios a SSH."
-        echo "Requiere medusa"
+        echo "Requiere nmap"
         echo "Uso.: sh brutessh2.sh <ip>"
         echo
         exit 0
