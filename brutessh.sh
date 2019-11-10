@@ -5,9 +5,9 @@ bruteSSH
 INFO
 if [ -z "$1" ]; then
         echo 
-        echo "Captura y muestra en pantalla el trafico."
-        echo "Requiere Bettercap release >2.9"
-        echo "Uso.: sh netspy.sh <interface>"
+        echo "Fuerza bruta con diccionarios a SSH."
+        echo "Requiere medusa"
+        echo "Uso.: sh brutessh.sh <ip>"
         echo 
         exit 0
 fi
