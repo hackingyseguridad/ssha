@@ -14,6 +14,13 @@ user4
 12345678
 87654321
 admini
+daemon
+ldap
+sshd
+sys
+games
+sudo
+uuidd
 password
 password1
 p4ssw0rd
@@ -103,7 +110,6 @@ proftpd
 public
 root
 superadmin
-sys
 system
 systemadmin
 systemadministrator
