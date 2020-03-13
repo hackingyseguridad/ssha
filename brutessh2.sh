@@ -14,4 +14,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-nmap $1 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves.txt --script-args unpwdb.timelimit=0
+nmap $1 -p 22 --script ssh-brute --script-args userdb=usuarios.txt,passdb=claves.txt,unpwdb.timelimit=0
