@@ -1,6 +1,5 @@
 #!/bin/bash
 cat << "INFO"
-
                                                           ..
                                ,,,                         MM .M
                            ,!MMMMMMM!,                     MM MM  ,.
