@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Genera para fuerza bruta listado con credenciales en base64
+# Genera listado con credenciales en base64,  para ataques de fuerza bruta
 
 USERNAME_WORDLIST="usuarios.txt"
 PASSWORD_WORDLIST="claves.txt"
@@ -9,6 +9,7 @@ while IFS= read -r user
 do
     while IFS= read -r password
     do
-        printf "%s:%s" "$user" "$password" |base64
+            credencial=$(printf "%s:%s" "$user" "$password" |base64 )
+    echo $credencial
     done < "$PASSWORD_WORDLIST"
 done < "$USERNAME_WORDLIST"
