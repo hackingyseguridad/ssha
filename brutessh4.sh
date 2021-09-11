@@ -40,4 +40,4 @@ if [ -z "$1" ]; then
 fi
 echo
 echo
-ncrack $1 -p 22 
+ncrack $1 -p 22 -U usuarios.txt -P claves.txt
