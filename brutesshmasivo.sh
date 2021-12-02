@@ -3,5 +3,5 @@ chmod 777 *
 echo "Para mantener como proceso ejecutar: nohup ./brutesshmasivo.sh &"
 echo "Uso.: ./brutesshmasivo.sh "
 for n in `cat ip.txt`
-do sh sshbrute.sh $n
+do sh brutessh.sh $n
 done
