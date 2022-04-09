@@ -6,4 +6,6 @@ echo "Uso: #ssha usuario@host OPCIONES"
 echo
 ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 $1 $2 $3 $4 $5
 
+ssh -oHostKeyAlgorithms=+ssh-dss $1 -oKexAlgorithms=+diffie-hellman-group1-sha1
+
 
