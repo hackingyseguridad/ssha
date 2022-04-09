@@ -5,3 +5,5 @@ echo "(c) hackingyseguridad.com 2017"
 echo "Uso: #ssha usuario@host OPCIONES"
 echo
 ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 $1 $2 $3 $4 $5
+
+
