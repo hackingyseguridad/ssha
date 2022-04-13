@@ -1,0 +1,7 @@
+#!/bin/bash
+echo
+echo "SSH  metodo diffie-hellman-group1-sha1 https://www.openssh.com/legacy.html y cifrados ssh-dss"
+echo "(c) hackingyseguridad.com 2022"
+echo "Uso: #sshb usuario@host OPCIONES"
+echo
+ssh -oHostKeyAlgorithms=+ssh-dss $1 $2 $3 $4 $5 -oKexAlgorithms=+diffie-hellman-group1-sha1
