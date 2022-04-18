@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # Descubre en remoto usuario existente valido SSH
+# Requiere tener instalado Python3 
+# sudo apt-get install python-is-python3
 # CVE-2018-15473 SSH User Enumeration by hackingyseguridad.com (@hackyseguridad) https://hackingyseguridad.com.github.io
 
 import argparse, logging, paramiko, socket, sys, os, warnings
