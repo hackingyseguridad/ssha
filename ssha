@@ -1,4 +1,5 @@
 #!/bin/bash
+# (c) hacking y seguridad .com 2022
 echo
 echo "SSH  metodo diffie-hellman-group1-sha1 https://www.openssh.com/legacy.html"
 echo "(c) hackingyseguridad.com 2017"
