@@ -1,0 +1,39 @@
+0.- Configuracion predeterminada SSHd
+
+1.- Inicio de sesión basado en clave pública SSH
+
+2.- Deshabilitar el inicio de sesión del usuario root
+
+3.- Deshabilitar el inicio de sesión basado en contraseña
+
+4.- Restringir el acceso ssh de ciertos usuarios
+
+6.- Deshabilitar el uso de contraseñas vacias 
+
+7.- Uso de contraseña seguras para usuarios/claves de ssh
+
+8.- Cortafuegos SSH TCP puerto 22
+
+9.- Cambiar el puerto SSH 
+
+10.- TCPWrapper es un sistema ACL de red basado en host
+
+11.- Impedir fuerza bruta a credenciales
+
+12.- Ver/modificar la lista de cifrados ofrecidos
+
+13.- Port_knocking
+
+14.- Configurar intervalo de tiempo de espera de cierre de sesión inactivo
+
+15.- banner de advertencia para los usuarios de ssh
+
+16.- Deshabilitar archivos .rhosts 
+
+17.- Deshabilitar la autenticación basada en host 
+
+18.- Parchear OpenSSH y sistema operativo
+
+19.- Chroot OpenSSH (Bloquear a los usuarios en sus directorios de inicio)
+
+20.- Deshabilitar el servidor OpenSSH en el cliente
