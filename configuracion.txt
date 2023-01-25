@@ -27,8 +27,8 @@ PermitEmptyPasswords no
 
 7.- Uso de contraseña seguras para usuarios/claves de ssh
 
-Utilizaremos un criterio para claves seguridas con un numero minimo de 10 caracteres, con al menos una letra en mayuscula y un par caracteres  numericos
-por Ejemplo;  PonFerrada56
+Utilizaremos un generador de claves y/o un criterio para claves seguridas con un numero minimo de 10 caracteres, 16 seria ideal, con al menos una letra en mayuscula y un par caracteres  numericos
+por Ejemplo;  PonFerrada563245
 
 8.- Cortafuegos SSH TCP puerto 22
 
