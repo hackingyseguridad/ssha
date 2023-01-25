@@ -81,4 +81,6 @@ apt-get install openssh-server
 
 19.- Chroot OpenSSH (Bloquear a los usuarios en sus directorios de inicio)
 
+Establecer con el comando chmod permisos que impidan a los usuarios acceder a carpetas del sistema tales como: /etc /bin /sbin
+
 20.- Deshabilitar el servidor OpenSSH en el cliente
