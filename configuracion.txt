@@ -51,6 +51,9 @@ IP permitidas
 
 11.- Impedir fuerza bruta a credenciales
 
+apt-get install sshguard
+sshguard 
+
 12.- Ver/modificar la lista de cifrados ofrecidos
 
 13.- Port_knocking
