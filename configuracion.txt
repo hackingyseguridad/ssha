@@ -1,5 +1,7 @@
 0.- Configuracion predeterminada SSHd
 
+cat  /etc/ssh/sshd_config
+
 1.- Inicio de sesión basado en clave pública SSH
 
 2.- Deshabilitar el inicio de sesión del usuario root
