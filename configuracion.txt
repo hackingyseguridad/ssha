@@ -84,10 +84,11 @@ ClientAliveCountMax 0
 
 15.- banner de advertencia para los usuarios de ssh
 
-AVISO LEGAL: ha accedido a un sistema propiedad de Hacking y Seguridad .COM. 
+vim  /etc/issue
+AVISO LEGAL: ha accedido a un sistema propiedad de HackingySeguridad.COM. 
 Necesita tener autorizacion antes de usarlo, estando usted estrictamente limitado al uso indicado en dicha autorizacion. 
 El acceso no autorizado a este sistema o el uso indebido del mismo esta prohibido y es contrario a la legislacion vigente. 
-El uso que realice de este sistema puede ser monitorizado.
+El uso que realice de este sistema puede ser monitorizado.\n \l
 
 16.- Deshabilitar archivos .rhosts 
 
