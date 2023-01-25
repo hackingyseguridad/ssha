@@ -37,7 +37,17 @@ sudo ufw allow from 80.58.0.0/15 to any port 22
 
 9.- Cambiar el puerto SSH 
 
+Port 65535
+
 10.- TCPWrapper es un sistema ACL de red basado en host
+
+TcpWrapper es es un sistema ACL de red en SO linux basado en host,
+
+vim /etc/hosts.allow
+
+sshd: 192.168.1.2 172.16.23.12 
+
+IP permitidas
 
 11.- Impedir fuerza bruta a credenciales
 
