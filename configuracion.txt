@@ -4,6 +4,8 @@ cat  /etc/ssh/sshd_config
 
 1.- Inicio de sesión basado en clave pública SSH
 
+Una forma de hacer que solo puedan intentar autenticar en SSH, es  que utilice autenticación basada en clave pública.
+
 2.- Deshabilitar el inicio de sesión del usuario root
 
 3.- Deshabilitar el inicio de sesión basado en contraseña
