@@ -67,6 +67,9 @@ ClientAliveCountMax 0
 
 16.- Deshabilitar archivos .rhosts 
 
+IgnoreRhosts yes
+ssh puede emular el comportamiento del comando rsh obsoleto, simplemente deshabilite el acceso no seguro a través de RSH.
+
 17.- Deshabilitar la autenticación basada en host 
 
 18.- Parchear OpenSSH y sistema operativo
