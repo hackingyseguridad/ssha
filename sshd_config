@@ -120,3 +120,32 @@ Subsystem       sftp    /usr/lib/openssh/sftp-server
 #       AllowTcpForwarding no
 #       PermitTTY no
 #       ForceCommand cvs server
+
+# Impedir hacer login sobre el usuario root
+PermitRootLogin no
+# Permitir usuarios antonio admin pepe
+AllowUsers antonio admin pepe
+# Impedir login sobre los usuarios root user administrador
+DenyUsers root user administrador
+PermitEmptyPasswords no
+# Especificamos  KEX (Key Exchange) algorithms.
+KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group-exchange-sha256
+# Especificamos los cifrados ofrecidos
+Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
+# Especificamos los MAC (message authentication code) algoritmos
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com,hmac-sh
+# Tiempo maximo sesion
+ClientAliveInterval 300
+ClientAliveCountMax 0
+# intentos max
+MaxAutTries 3
+# concurrencia max
+MaStartups 2
+# Tiempo maximo de espera login
+LoginGraceTime 30
+# Limitar usuarios que pueden login
+allowusers antonio
+# Impedir login con usuario root
+PermitRootLogin no
+# Cambiar config, a otro puerto SSH
+port 443
