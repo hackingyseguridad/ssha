@@ -13,7 +13,7 @@ PermitRootLogin no
 
 3.- Deshabilitar el inicio de sesión basado en contraseña
 
-PubkeyAuthentication si
+PubkeyAuthentication yes
 (Solo se permite inicios de sesión basados en claves públicas; Métodos de autenticación clave pública)
 
 4.- Restringir el acceso ssh de ciertos usuarios
@@ -22,6 +22,8 @@ AllowUsers antonio admin pepe
 DenyUsers root user administrador
 
 6.- Deshabilitar el uso de contraseñas vacias 
+
+PermitEmptyPasswords no
 
 7.- Uso de contraseña seguras para usuarios/claves de ssh
 
