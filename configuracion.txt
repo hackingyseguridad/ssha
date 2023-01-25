@@ -60,6 +60,9 @@ sshguard
 
 14.- Configurar intervalo de tiempo de espera de cierre de sesión inactivo
 
+ClientAliveInterval 300
+ClientAliveCountMax 0
+
 15.- banner de advertencia para los usuarios de ssh
 
 16.- Deshabilitar archivos .rhosts 
