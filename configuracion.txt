@@ -72,7 +72,11 @@ ssh puede emular el comportamiento del comando rsh obsoleto, simplemente deshabi
 
 17.- Deshabilitar la autenticación basada en host 
 
+HostbasedAuthentication no
+
 18.- Parchear OpenSSH y sistema operativo
+
+apt-get install sshd
 
 19.- Chroot OpenSSH (Bloquear a los usuarios en sus directorios de inicio)
 
