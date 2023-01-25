@@ -1,0 +1,1 @@
+ssh -oHostKeyAlgorithms=+ssh-rsa  $1 $2 $3 $4 $5 -oKexAlgorithms=+diffie-hellman-group1-sha1 
