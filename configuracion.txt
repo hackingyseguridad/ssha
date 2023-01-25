@@ -32,6 +32,9 @@ por Ejemplo;  PonFerrada563245
 
 8.- Cortafuegos SSH TCP puerto 22
 
+apt-get install ufw
+sudo ufw allow from 80.58.0.0/15 to any port 22
+
 9.- Cambiar el puerto SSH 
 
 10.- TCPWrapper es un sistema ACL de red basado en host
