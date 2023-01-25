@@ -76,7 +76,8 @@ HostbasedAuthentication no
 
 18.- Parchear OpenSSH y sistema operativo
 
-apt-get install sshd
+apt-get install ssh
+apt-get install openssh-server
 
 19.- Chroot OpenSSH (Bloquear a los usuarios en sus directorios de inicio)
 
