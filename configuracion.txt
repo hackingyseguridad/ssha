@@ -18,6 +18,9 @@ PubkeyAuthentication si
 
 4.- Restringir el acceso ssh de ciertos usuarios
 
+AllowUsers antonio admin pepe
+DenyUsers root user administrador
+
 6.- Deshabilitar el uso de contraseñas vacias 
 
 7.- Uso de contraseña seguras para usuarios/claves de ssh
