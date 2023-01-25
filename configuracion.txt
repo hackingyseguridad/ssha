@@ -13,8 +13,8 @@ PermitRootLogin no
 
 3.- Deshabilitar el inicio de sesión basado en contraseña
 
-Solo se permite inicios de sesión basados en claves públicas; Métodos de autenticación clave pública
-PubkeyAuthentication sí
+PubkeyAuthentication si
+(Solo se permite inicios de sesión basados en claves públicas; Métodos de autenticación clave pública)
 
 4.- Restringir el acceso ssh de ciertos usuarios
 
