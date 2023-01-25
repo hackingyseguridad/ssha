@@ -10,7 +10,11 @@ y luego esa clave publica la instalamos en todos los clientes que queremos que p
 
 2.- Deshabilitar el inicio de sesión del usuario root
 
+PermitRootLogin no
+
 3.- Deshabilitar el inicio de sesión basado en contraseña
+
+
 
 4.- Restringir el acceso ssh de ciertos usuarios
 
