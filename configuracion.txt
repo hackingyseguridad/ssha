@@ -10,6 +10,7 @@ y luego esa clave publica la instalamos en todos los clientes que queremos que p
 
 2.- Deshabilitar el inicio de sesión del usuario root
 
+vim /etc/ssh/sshd_config
 PermitRootLogin no
 
 3.- Deshabilitar el inicio de sesión basado en contraseña
