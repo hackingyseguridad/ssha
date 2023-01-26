@@ -12,9 +12,9 @@ https://raw.githubusercontent.com/hackingyseguridad/ssha/master/configuracion.tx
 
 ssha usuario@IP  opciones del cliente para cifrados obsoletos, single method diffie-hellman-group1-sha1
 
-sshb.sh opciones del cliente para cifrados obsoletos
+sshb opciones del cliente para cifrados obsoletos
 
-sshc.sh opciones del cliente para cifrados obsoletos
+sshc opciones del cliente para cifrados obsoletos
 
 https://www.openssh.com/legacy.html
 
