@@ -9,6 +9,9 @@
 # possible, but leave them commented.  Uncommented options override the
 # default value.
 
+# Este fichero ha sido modificado para dotar de seguridad maxima el servidor ssh
+# hacking y seguridad .COM 2023
+
 Include /etc/ssh/sshd_config.d/*.conf
 
 #Port 22
