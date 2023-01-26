@@ -1,4 +1,6 @@
-# Utilidades de explotacion SSH por fuerza bruta
+# Utilidades de explotacion SSH 
+
+<img style="float:left" alt="netspy logo" src="https://github.com/hackingyseguridad/ssha/blob/master/SSH.png">
 
 # ssha.sh
 
