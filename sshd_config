@@ -131,7 +131,7 @@ Subsystem       sftp    /usr/lib/openssh/sftp-server
 PermitRootLogin no
 
 # Permitir y limitar usuarios antonio admin pepe
-AllowUsers antonio admin pepe
+AllowUsers antonio admin emergencia@192.168.1.200
 
 # Impedir login sobre los usuarios root user administrador
 DenyUsers root user administrador
