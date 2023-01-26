@@ -156,7 +156,7 @@ ClientAliveCountMax 4
 MaxAutTries 3
 
 # concurrencia de usuarios conectados maxima
-MaStartups 2
+MaxStartups 3
 
 # Tiempo maximo de espera login y desconexion si no se introducen credenciales
 LoginGraceTime 30
