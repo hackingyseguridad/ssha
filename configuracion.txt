@@ -110,6 +110,8 @@ Establecer con el comando chmod permisos que impidan a los usuarios acceder a ca
 
 20.- Deshabilitar el servidor OpenSSH en el cliente
 
-Configuración sshd_config segura!
+sudo /etc/init.d/ssh stop
+
+Ejemplo de configuración sshd_config segura!
 
 https://raw.githubusercontent.com/hackingyseguridad/ssha/master/sshd_config
