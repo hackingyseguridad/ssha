@@ -6,7 +6,7 @@
 
 Configuracion segura del servidor SSHd
 
-
+https://raw.githubusercontent.com/hackingyseguridad/ssha/master/configuracion.txt
 
 # ssha.sh
 
