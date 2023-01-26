@@ -2,11 +2,21 @@
 
 <img style="float:left" alt="netspy logo" src="https://github.com/hackingyseguridad/ssha/blob/master/ssh.png">
 
+# sshd_config
+
+Configuracion segura del servidor SSHd
+
+
+
 # ssha.sh
 
 ssha usuario@IP 
   
-SSH single method diffie-hellman-group1-sha1
+SSH cliente single method diffie-hellman-group1-sha1
+
+sshb.sh opciones del cliente para cifrados obsoletos
+
+sshc.sh opciones del cliente para cifrados obsoletos
 
 https://www.openssh.com/legacy.html
 
@@ -17,6 +27,8 @@ Escanea puertos SSH accesibles
 # scanciphers.sh
 
 Muestra los cifrados ofrecidos
+
+<img style="float:left" alt="netspy logo" src="https://github.com/hackingyseguridad/ssha/blob/master/SSH.png">
 
 # usuariossh.py
 
