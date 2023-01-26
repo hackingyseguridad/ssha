@@ -10,9 +10,7 @@ https://raw.githubusercontent.com/hackingyseguridad/ssha/master/configuracion.tx
 
 # ssha.sh
 
-ssha usuario@IP 
-  
-SSH cliente single method diffie-hellman-group1-sha1
+ssha usuario@IP  opciones del cliente para cifrados obsoletos, single method diffie-hellman-group1-sha1
 
 sshb.sh opciones del cliente para cifrados obsoletos
 
