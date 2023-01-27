@@ -81,6 +81,9 @@ MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@op
 
 13.- Port_knocking
 
+Es una forma de ocultar un puerto de un servicio abierto, solo responderá el servicio si le llega un determinado paquete  
+Requiere instalar knockd en Linux y configurar /etc/knockd.conf
+
 14.- Configurar intervalo de tiempo de espera de cierre de sesión inactivo
 
 ClientAliveInterval 300
