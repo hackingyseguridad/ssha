@@ -98,6 +98,7 @@ El uso que realice de este sistema puede ser monitorizado.\n \l
 
 IgnoreRhosts yes
 ssh puede emular el comportamiento del comando rsh obsoleto, simplemente deshabilite el acceso no seguro a través de RSH.
+viene del servicio rlogin el archivo /etc/hosts.equiv está bajo el control del administrador del sistema y puede ser gestionado eficazmente, cualquier usuario puede crear un archivo .rhosts que conceda acceso a cualquier persona que el usuario elija sin el conocimiento del administrador del sistema.
 
 17.- Deshabilitar la autenticación basada en host 
 
