@@ -54,6 +54,10 @@ IP permitidas
 apt-get install sshguard
 sshguard 
 
+vim /etc/sshguard/sshguard.conf
+
+Ejemplo de configuración:  https://raw.githubusercontent.com/hackingyseguridad/ssha/master/sshguard.conf
+
 12.- Ver/modificar la lista de cifrados ofrecidos
 
 para ver que cifrados tenemos:
