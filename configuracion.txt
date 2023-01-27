@@ -54,6 +54,8 @@ IP permitidas
 apt-get install sshguard
 sshguard 
 
+fail2bain
+
 vim /etc/sshguard/sshguard.conf
 
 Ejemplo de configuración:  https://raw.githubusercontent.com/hackingyseguridad/ssha/master/sshguard.conf
