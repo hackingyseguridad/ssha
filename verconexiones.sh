@@ -1,2 +1,2 @@
 
-journalctl -u ssh --since today
+journalctl -fu ssh
