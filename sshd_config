@@ -109,8 +109,8 @@ PrintMotd no
 #ChrootDirectory none
 #VersionAddendum none
 
-# no default banner path
-#Banner none
+# Editamos el fichero issue.net con nuestro banner ** HACKINGYSEGURIDAD.COM. Queda prohidido cualqueir acceso no autorizado **
+Banner /etc/issue.net
 
 # Allow client to pass locale environment variables
 AcceptEnv LANG LC_*
