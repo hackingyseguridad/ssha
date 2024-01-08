@@ -1,0 +1,48 @@
+
+Hacking con Inteligencia Artificial:
+ 
+OpenAI https://chat.openai.com/, Chat GPT 3.5 podemos interactuar iniciand sesión con una cuenta gratuita de Google p.ej.
+
+Bard de Google: https://bard.google.com/  la la IA de Gemini  Pro que supera a ChatGPT, por ahora solo esta disponible conectantandonos a Bard desde USA o con una VPN
+
+Bind de Microsft, permite interactuar con la IA de Microoft ahora con Copilot https://copilot.microsoft.com/ permite seleccionar y utilizar no solo la IA de bing, sino tambien Chat GPT 4!. https://support.microsoft.com/es-es/copilot
+
+IA por Whatsapp escribiendo a CAMI  https://wa.me/message/3X5TIEOVMLAWH1
+
+WormGPT  IA para hackers, https://flowgpt.com/p/wormgpt-6
+
+...
+ 
+0.- Listado de IP con el puerto TCP 22 SSH abiertos, expuesto a internet del AS3352 de Telefonica
+
+1.- IA para dealle de vulnerabilidades; 
+
+2.- ¿ como funciona la vulnerabilidad Terapin SSH ?
+ 
+3.-comando y sintaxis a utilizar para buscar puertos/servicios como escanear puerto 23 TCP telnet en el AS 3352 ?
+
+4.- SScript de ataque de inundación  de paquetes UDP a una IP y puerto   
+
+5.- Phissing : texto de respuesta de atención al cliente 1004 Movistar a un cliente
+
+6º.- credenciales por defecto en los router de Cisco Systems, para acceso por Telnet o SSH
+
+7.- credenciales por defecto, de fabrica, en los router Juniper para acceso por Telnet o SSH
+
+8.- codigo de ataque de envio de paquetes ICMP para inundacion de una IP remota
+
+9.- los 10 cve vulnerabilidades mas explotados en 2023
+
+10 .- los 10 cve vulnerabilidades mas explotados para Ransonware
+
+11.- vulnerabilidades mas explotados para el servicio SSH 22 tcp ?
+
+12 .- Script para detectar activos vulnerables a CVE-2020-14721
+https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q=SSH-2.0-OpenSSH_7.8p1
+
+13.- Vulnerabilidades SSH-2.0-OpenSSH_7.8p1
+
+14.- Vulnerabilidades SSH-2.0-OpenSSH_7.8p1 en AS 3352 de Telefonica
+
+15.- POC Exploit para CVE-2020-14721 
+
