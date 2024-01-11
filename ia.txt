@@ -13,9 +13,7 @@ WormGPT  IA para hackers, https://flowgpt.com/p/wormgpt-6
 
 ...
  
-0.- Listado de IP con el puerto TCP 22 SSH abiertos, expuesto a internet del AS3352 de Telefonica
-
-1.- IA para dealle de vulnerabilidades; 
+1.- IA para dealle de vulnerabilidades;  Riesgos de la vulnerabilidad, Fuerza bruta o XSS Cross Site Scripting
 
 2.- ¿ como funciona la vulnerabilidad Terapin SSH ?
  
@@ -46,3 +44,4 @@ https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtua
 
 15.- POC Exploit para CVE-2020-14721 
 
+16.- Listado de IP con el puerto TCP 22 SSH abiertos, expuesto a internet del AS3352 de Telefonica
