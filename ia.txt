@@ -13,7 +13,7 @@ WormGPT  IA para hackers, https://flowgpt.com/p/wormgpt-6
 
 ...
  
-1.- IA para dealle de vulnerabilidades;  Riesgos de la vulnerabilidad, Fuerza bruta o XSS Cross Site Scripting
+1.- IA para resumen de vulnerabilidades; Riesgos de la vulnerabilidad, Fuerza bruta o XSS Cross Site Scripting, X-headers, TLS, cifrados debiles, ..
 
 2.- ¿ como funciona la vulnerabilidad Terapin SSH ?
  
