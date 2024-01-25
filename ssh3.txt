@@ -1,0 +1,13 @@
+SSH3, aun experimental, es una nueva versión de SSH más rápida y segura utiliza HTTP/3.-  UDP QUIC+TLS1.3 para la seguridad y autorización HTTP y para autenticación de usuario. 
+Ventajas:
+-Establecimiento de sesión  más rápido
+-Nuevos métodos de autenticación HTTP, como OAuth 2.0 y OpenID Connect , además de la autenticación SSH clásica.
+-Robustez ante ataques de escaneo de puertos: su servidor SSH3 puede volverse invisible para otros usuarios de Internet
+-Reenvío de puertos UDP además del reenvío de puertos TCP clásico
+-Todas las funciones permitidas por el protocolo QUIC moderno: incluida la migración de conexiones (próximamente) y conexiones multiruta
+SSHv2 define sus propios protocolos para la autenticación de usuarios y el establecimiento de canales seguros, SSH3 se basa en los mecanismos robustos y probados de TLS 1.3, QUIC y HTTP.
+Funciones completamente nuevas:
+-Reenvío de puertos UDP : ahora puede acceder a su QUIC, DNS, RTP o cualquier servidor basado en UDP al que solo se pueda acceder desde su host SSH3. Los paquetes UDP se reenvían mediante datagramas QUIC.
+-Certificados X.509 : ahora puede utilizar sus certificados HTTPS clásicos para autenticar su servidor SSH3. Este mecanismo es más seguro que el clásico mecanismo de clave de host SSHv2. 
+-Ocultar su servidor detrás de un enlace secreto.
+-Autenticación de usuario segura sin llave mediante OpenID Conne 
