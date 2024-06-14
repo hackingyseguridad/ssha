@@ -3,4 +3,4 @@
 # 
 # (c) hackingyseguridad.com 2024
 #
-ssh -i "clave_privada.pem" $1
+ssh -i "id_rsa.pub" $1
