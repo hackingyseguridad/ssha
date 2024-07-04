@@ -22,6 +22,44 @@ https://www.openssh.com/legacy.html
 
 Escanea puertos SSH accesibles
 
+# Comandos SSH habituales
+
+1. Conexión SSH estándar
+
+ssh -p 3000 usuario@hostIP
+
+2. Autenticación mediante clave SSH
+
+ssh -i/path/to/private-key usuario@hostIP
+
+3. Ejecución de comandos remotos
+
+ssh usuario@hostIP "ls -la"
+
+4. Reenvío de puertos
+
+ssh -L <local-port>:<hostIP1>:<remote-port> usuario@hostIP2
+
+5. Conexión a través de un servidor intermedio
+
+ssh -J bob@hostIP1:port1 usuario@hostIP2
+
+6. Copia de la clave pública SSH
+
+ssh-copy-id -i /path/to/public-key usuario@hostIP
+
+7. Conexión con opciones personalizadas
+
+ssh -F /path/to/ssh_config usuario@hostIP
+
+8. Reenvío de puertos con direcciones locales
+
+ssh -FN -R <remote-port>:localhost:22 usuario@hostIP
+
+9. Transferencia de directorios mediante SSH
+
+scp -rP 3000  /path/to/local-dir usuario@hostIP:/path/to/remote-dir
+
 # scanciphers.sh
 
 Muestra los cifrados ofrecidos
