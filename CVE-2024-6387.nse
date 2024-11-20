@@ -1,0 +1,75 @@
+local shortport = require "shortport"
+local stdnse = require "stdnse"
+local nmap = require "nmap"
+local comm = require "comm"
+local string = require "string"
+
+description = [[
+  This script checks if a server is running a vulnerable version of OpenSSH.
+]]
+
+---
+-- @usage
+-- nmap --script openssh-vuln-checker -p 22 <target>
+--
+-- @output
+-- PORT   STATE SERVICE
+-- 22/tcp open  ssh
+-- | openssh-vuln-checker:
+-- |   Server at <IP> is running SSH-2.0-OpenSSH_<version> (vulnerable)
+-- |_  Server at <IP> is not vulnerable (running SSH-2.0-OpenSSH_<version>)
+
+author = "paradessia"
+license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
+categories = {"vuln", "safe"}
+
+-- List of vulnerable versions
+local vulnerable_versions = {
+    "SSH-2.0-OpenSSH_8.5p1",
+    "SSH-2.0-OpenSSH_8.6p1",
+    "SSH-2.0-OpenSSH_8.7p1",
+    "SSH-2.0-OpenSSH_8.8p1",
+    "SSH-2.0-OpenSSH_8.9p1",
+    "SSH-2.0-OpenSSH_9.0p1",
+    "SSH-2.0-OpenSSH_9.1p1",
+    "SSH-2.0-OpenSSH_9.2p1",
+    "SSH-2.0-OpenSSH_9.3p1",
+    "SSH-2.0-OpenSSH_9.4p1",
+    "SSH-2.0-OpenSSH_9.5p1",
+    "SSH-2.0-OpenSSH_9.6p1",
+    "SSH-2.0-OpenSSH_9.7p1"
+}
+
+portrule = shortport.port_or_service(22, "ssh")
+
+action = function(host, port)
+    local socket = nmap.new_socket()
+    socket:set_timeout(1000)
+
+    local status, err = socket:connect(host.ip, port.number)
+    if not status then
+        return stdnse.format_output(false, "Failed to connect: %s", err)
+    end
+
+    local banner
+    status, banner = socket:receive_lines(1)
+    socket:close()
+
+    if not status then
+        return stdnse.format_output(false, "Failed to receive SSH banner: %s", banner)
+    end
+
+    local is_vulnerable = false
+    for _, version in ipairs(vulnerable_versions) do
+        if string.find(banner, version, 1, true) then
+            is_vulnerable = true
+            break
+        end
+    end
+
+    if is_vulnerable then
+        return stdnse.format_output(true, "Server is running vulnerable(CVE-2024-6387)", host.ip, banner)
+    else
+        return stdnse.format_output(false, "Server  is NOT vulnerable (CVE-2024-6387)", host.ip, banner)
+    end
+end
