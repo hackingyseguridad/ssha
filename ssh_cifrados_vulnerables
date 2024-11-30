@@ -1,0 +1,34 @@
+SSH cifrados vulnerables:
+
+Tipos de claves de host
+
+ssh-rsa (3072 bits) #  SHA-1 tiene debilidades que se pueden explotar. El puntaje está limitado a 65.
+ecdsa-sha2-nistp256 #  Es posible que la Agencia de Seguridad Nacional de los Estados Unidos haya modificado las curvas P del NIST. La puntuación se ha reducido en 2.
+
+Algoritmos de intercambio de claves
+
+ecdh-sha2-nistp256-512
+Es posible que la Agencia de Seguridad Nacional de los Estados Unidos haya modificado las curvas P del NIST. La puntuación se ha reducido en 2.
+
+diffie-hellman-sha1 (3072 bits)
+grupo diffie-hellman-14-sha1
+SHA-1 tiene debilidades que se pueden explotar. La puntuación se redujo en 2.
+
+Cifradaos de trasporte
+aes128-cbc
+aes193-cbc
+aes256-cbc
+Utiliza el modo de cifrado CBC obsoleto. Aunque este objetivo ofrece el marcador de intercambio de claves kex-strict-?-v00@openssh.com (lo que implica que está parcheado contra la vulnerabilidad Terrapin [CVE-2023-48795]), un par sin parchear aún puede crear una conexión insegura al vincular este cifrado con una MAC ETM. Si los pares sin parchear son una preocupación, considere deshabilitar este cifrado. Puntuación reducida en 1.
+
+Códigos de autenticación de mensajes
+
+hmac-sha1-etm@openssh.com
+SHA-1 tiene debilidades que se pueden explotar. La puntuación se redujo en 2.
+
+hmac-sha1
+SHA-1 tiene debilidades que se pueden explotar. La puntuación se redujo en 2.
+
+hmac-sha2-256
+umac-128@openssh.com
+hmac-sha2-512
+Utiliza el método de cifrado y MAC. La puntuación se reduce en 1
