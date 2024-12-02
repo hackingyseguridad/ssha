@@ -1,4 +1,5 @@
-*** key_algorithms *** , server_host_key_algorithms, mac_algorithms, compression_algorithms “sería poco relevantes” los ahí ofrecidos siempre y cuando los cifrados de trasporte(encryption_algorithms) permitidos sea los recomendados.
+# key_algorithms 
+, server_host_key_algorithms, mac_algorithms, compression_algorithms “sería poco relevantes” los ahí ofrecidos siempre y cuando los cifrados de trasporte(encryption_algorithms) permitidos sea los recomendados.
 
 *** kex_algorithms: *** ecdh-sha2-nistp256, ecdh-sha2-nistp384,  ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha1 
 
