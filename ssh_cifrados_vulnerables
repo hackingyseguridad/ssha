@@ -1,34 +1,12 @@
-SSH cifrados vulnerables:
+key_algorithms, server_host_key_algorithms, mac_algorithms, compression_algorithms “sería poco relevantes” los ahí ofrecidos siempre y cuando los cifrados de trasporte(encryption_algorithms) permitidos sea los recomendados.
 
-Tipos de claves de host
+kex_algorithms: ecdh-sha2-nistp256, ecdh-sha2-nistp384,  ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha1 
 
-ssh-rsa (3072 bits) #  SHA-1 tiene debilidades que se pueden explotar. El puntaje está limitado a 65.
-ecdsa-sha2-nistp256 #  Es posible que la Agencia de Seguridad Nacional de los Estados Unidos haya modificado las curvas P del NIST. La puntuación se ha reducido en 2.
+Desde la versión OpenSSH 8.8, el algoritmo de clave ssh-rsa ha sido deshabilitado. En versiones anteriores, podemos deactivarlo a mano, editando en el fichero /etc/ssh/sshd_config, y eliminando de Host KeyAlgorithms +ssh-rsa:
 
-Algoritmos de intercambio de claves
+server_host_key_algorithms: rsa, sha, sha1   eliminar de la configuración RSA, como cifrado para la clave, y ofrecer por ejemplo como alternativas las combinaciones: rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519
+https://www.endpointdev.com/blog/2023/04/ssh-host-key/# 
 
-ecdh-sha2-nistp256-512
-Es posible que la Agencia de Seguridad Nacional de los Estados Unidos haya modificado las curvas P del NIST. La puntuación se ha reducido en 2.
+encryption_algorithms: aes128-cbc, aes192-cbc. aes256-cbc
 
-diffie-hellman-sha1 (3072 bits)
-grupo diffie-hellman-14-sha1
-SHA-1 tiene debilidades que se pueden explotar. La puntuación se redujo en 2.
-
-Cifradaos de trasporte
-aes128-cbc
-aes193-cbc
-aes256-cbc
-Utiliza el modo de cifrado CBC obsoleto. Aunque este objetivo ofrece el marcador de intercambio de claves kex-strict-?-v00@openssh.com (lo que implica que está parcheado contra la vulnerabilidad Terrapin [CVE-2023-48795]), un par sin parchear aún puede crear una conexión insegura al vincular este cifrado con una MAC ETM. Si los pares sin parchear son una preocupación, considere deshabilitar este cifrado. Puntuación reducida en 1.
-
-Códigos de autenticación de mensajes
-
-hmac-sha1-etm@openssh.com
-SHA-1 tiene debilidades que se pueden explotar. La puntuación se redujo en 2.
-
-hmac-sha1
-SHA-1 tiene debilidades que se pueden explotar. La puntuación se redujo en 2.
-
-hmac-sha2-256
-umac-128@openssh.com
-hmac-sha2-512
-Utiliza el método de cifrado y MAC. La puntuación se reduce en 1
+mac_algorithms: () recomendados hmac. Para evitar incidencias de clientes SSH que no soportan hmac, ofrecer por ahora también todas las combinaciones: mac umac. 
