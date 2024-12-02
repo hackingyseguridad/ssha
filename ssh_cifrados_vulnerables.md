@@ -1,4 +1,4 @@
-*CIFRADOS SSH DEBILES/ROTOS* 
+** CIFRADOS SSH DEBILES/ROTOS ** 
 
 # key_algorithms:
 ecdh-sha2-nistp256, ecdh-sha2-nistp384,  ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha1 
