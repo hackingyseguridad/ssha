@@ -26,3 +26,7 @@ usuario@host.com -p 65535 -i /root/.ssh/id_dropbear  # El puerto en el servidor 
 -R 38004:192.168.250.100:22	#
 
 -L 4444:localhost:27080  	# tráfico del puerto 4444 local se reenvía al 27080 del servidor
+
+-N: No ejecuta ningún comando remoto. Útil cuando solo se quiere el reenvío de puertos.
+
+-T: Deshabilita la asignación de pseudo-terminal. También útil para el reenvío de puertos.
