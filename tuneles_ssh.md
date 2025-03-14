@@ -1,4 +1,5 @@
 
+# Parametros tuneles con ssh 
 
 /usr/bin/ssh -y -y 
 
