@@ -55,4 +55,8 @@ El C2 (c2-server.com) escuchará en 127.0.0.1:1080 y redirigirá el tráfico a t
              |
           Exploit
 
-Si en tu local tienes un proxy SOCKS en el puerto 1080, el C2 podría usarlo.
+Si en tu local tienes un proxy SOCKS en el puerto 1080, el C2 podría usarlo, para navegar por ej,
+
+curl  --socks5 127.0.0.1:1080 http://hackingyseguridad.com
+
+
