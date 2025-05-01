@@ -1,7 +1,9 @@
 # 
 #
 # audit ssh (R) hackingyseguridad,.   2024
-
+echo
+ssh-audit $1 -p 22
+echo
 nmap -Pn -sT -p22 $1 -sC # Send default nmap scripts for SSH
 nmap -Pn -sT -p22 $1 -sV # Retrieve version
 nmap -Pn -sT -p22 $1 --script ssh2-enum-algos # Retrieve supported algorythms
