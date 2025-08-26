@@ -111,12 +111,13 @@ Explotar vulnerabilidad 2018-15473 OpenSSH 2.3 < 7.7 Username Enumeration
 
 ## brutessh.sh
 
-sh brutessh.sh IP 
+[sh brutessh.sh IP ](https://github.com/hackingyseguridad/brute)
 
 Test para intentar obtener credenciales de acceso a SSH con diccionario usuarios.txt y claves.txt
 
 
-http://www.hackingyseguridad.com/
+
+http://www.hackingyseguridad.com/ 
 
 
 
