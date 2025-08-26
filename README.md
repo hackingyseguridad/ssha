@@ -1,7 +1,7 @@
 
 ## Vulnerabilidades SSH 
 
-La primera vulnerabilidad, la que permite un ataque Man-in-the-Middle, ha sido registrada como CVE-2025-26465. Es muy antigua, puesto que está presente desde finales de 2014, hace ya más de 10 años. Apareció con el lanzamiento de OpenSSH 6.8p1. Hasta ahora no ha sido detectado el problema. Si la opción VerifyHostKeyDNS está habilitada, permite a un atacante lanzar este tipo de ataque.
+CVE-2025-26465. Es muy antigua, de finales de 2014, OpenSSH 6.8p1. Si la opción VerifyHostKeyDNS está habilitada, permite a un atacante lanzar este tipo de ataque.
 
 CVE-2025-26466 OpenSSH 9.5p1, agosto de 2023. Fallo de denegación de servicio. Ocurre durante el intercambio de claves, debido a una asignación de memoria sin restricciones. 
 
