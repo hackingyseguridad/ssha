@@ -1,5 +1,80 @@
 
-## Vulnerabilidades SSH 
+## top 10 vulnerabilidades SSH 
+
+##@ 1. CVE-2024-6387 - "regreSSHion" (2024)
+- **CVSS:** 9.8 (Crítico)
+- **Tipo:** Ejecución remota de código
+- **Impacto:** Permite RCE como root
+- **Facilidad:** Explotación relativamente sencilla
+- **Afecta:** OpenSSH 8.5p1 - 9.7p1
+
+## 2. CVE-2018-15473 (2018)
+- **CVSS:** 5.3 (Medio)
+- **Tipo:** Filtración de información
+- **Impacto:** Revela nombres de usuario válidos
+- **Facilidad:** Muy fácil de explotar
+- **Afecta:** OpenSSH 7.7 y anteriores
+
+## 3. CVE-2016-0777 (2016)
+- **CVSS:** 4.0 (Medio)
+- **Tipo:** Filtración de información
+- **Impacto:** Filtra hasta 64KB de memoria del cliente
+- **Facilidad:** Explotación sencilla
+- **Afecta:** OpenSSH 5.4 - 7.1
+
+## 4. CVE-2020-15778 (2020)
+- **CVSS:** 6.8 (Medio)
+- **Tipo:** Ejecución de código
+- **Impacto:** Ejecución arbitraria en el cliente
+- **Facilidad:** Moderadamente fácil
+- **Afecta:** OpenSSH hasta 8.3p1
+
+## 5. CVE-2019-6111 (2019)
+- **CVSS:** 5.7 (Medio)
+- **Tipo:** Sobrescritura de archivos
+- **Impacto:** Permite sobrescribir archivos arbitrarios
+- **Facilidad:** Requiere interacción del usuario
+- **Afecta:** OpenSSH hasta 7.9
+
+## 6. CVE-2023-38408 (2023)
+- **CVSS:** 5.9 (Medio)
+- **Tipo:** Elevación de privilegios
+- **Impacto:** Privesc en sistemas específicos
+- **Facilidad:** Compleja de explotar
+- **Afecta:** OpenSSH versiones específicas
+
+## 7. CVE-2021-41617 (2021)
+- **CVSS:** 7.8 (Alto)
+- **Tipo:** Elevación de privilegios
+- **Impacto:** Privesc a través de sshd
+- **Facilidad:** Compleja
+- **Afecta:** OpenSSH 8.5p1
+
+## 8. CVE-2019-16905 (2019)
+- **CVSS:** 6.8 (Medio)
+- **Tipo:** Denegación de servicio
+- **Impacto:** Crash del servicio SSH
+- **Facilidad:** Fácil de explotar
+- **Afecta:** OpenSSH 7.7 - 7.9
+
+## 9. CVE-2020-14145 (2020)
+- **CVSS:** 4.3 (Medio)
+- **Tipo:** Filtración de información
+- **Impacto:** Revela información del servidor
+- **Facilidad:** Fácil
+- **Afecta:** OpenSSH hasta 8.3
+
+## 10. CVE-2018-15919 (2018)
+- **CVSS:** 5.3 (Medio)
+- **Tipo:** Denegación de servicio
+- **Impacto:** Crash del servicio SSH
+- **Facilidad:** Moderadamente fácil
+- **Afecta:** OpenSSH 7.8
+
+
+¿Necesitas detalles específicos sobre alguna de estas vulnerabilidades o medidas de mitigación particulares?
+
+
 
 CVE-2025-26465. Es muy antigua, de finales de 2014, OpenSSH 6.8p1. Si la opción VerifyHostKeyDNS está habilitada, permite a un atacante lanzar este tipo de ataque.
 
