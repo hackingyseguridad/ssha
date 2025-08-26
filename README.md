@@ -10,12 +10,8 @@ Filtración de información. Revela nombres de usuario válidos. Muy fácil de e
 ### 3. CVE-2016-0777 (OpenSSH 5.4 - 7.1) 4.0 (Medio)
 Filtración de información. Filtra hasta 64KB de memoria del cliente.  Explotación sencilla
 
-## 4. CVE-2020-15778 (2020)
-- **CVSS:** 6.8 (Medio)
-- **Tipo:** Ejecución de código
-- **Impacto:** Ejecución arbitraria en el cliente
-- **Facilidad:** Moderadamente fácil
-- **Afecta:** OpenSSH hasta 8.3p1
+### 4. CVE-2020-15778 (OpenSSH hasta 8.3p1)  6.8 (Medio) 
+Ejecución de código. Ejecución arbitraria en el cliente. Moderadamente fácil de explotar
 
 ## 5. CVE-2019-6111 (2019)
 - **CVSS:** 5.7 (Medio)
