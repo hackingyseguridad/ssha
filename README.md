@@ -19,15 +19,11 @@ Sobrescritura de archivos. Permite sobrescribir archivos arbitrarios. Requiere i
 ### 6. 
 
 
-## 7. CVE-2021-41617 (OpenSSH 8.5p1) 7.8 (Alto) 
+### 7. CVE-2021-41617 (OpenSSH 8.5p1) 7.8 (Alto) 
 Elevación de privilegios. Privesc a través de sshd. Compleja de explotar
 
-## 8. CVE-2019-16905 (2019)
-- **CVSS:** 6.8 (Medio)
-- **Tipo:** Denegación de servicio
-- **Impacto:** Crash del servicio SSH
-- **Facilidad:** Fácil de explotar
-- **Afecta:** OpenSSH 7.7 - 7.9
+### 8. CVE-2019-16905 (OpenSSH 7.7 - 7.9) 6.8 (Medio)
+Denegación de servicio. Crash del servicio SSH. Fácil de explotar
 
 ## 9. CVE-2020-14145 (2020)
 - **CVSS:** 4.3 (Medio)
