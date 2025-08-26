@@ -16,19 +16,11 @@ Ejecución de código. Ejecución arbitraria en el cliente. Moderadamente fácil
 ### 5. CVE-2019-6111 (OpenSSH hasta 7.9) 5.7 (Medio)
 Sobrescritura de archivos. Permite sobrescribir archivos arbitrarios. Requiere interacción del usuario
 
-## 6. CVE-2023-38408 (2023)
-- **CVSS:** 5.9 (Medio)
-- **Tipo:** Elevación de privilegios
-- **Impacto:** Privesc en sistemas específicos
-- **Facilidad:** Compleja de explotar
-- **Afecta:** OpenSSH versiones específicas
+### 6. 
 
-## 7. CVE-2021-41617 (2021)
-- **CVSS:** 7.8 (Alto)
-- **Tipo:** Elevación de privilegios
-- **Impacto:** Privesc a través de sshd
-- **Facilidad:** Compleja
-- **Afecta:** OpenSSH 8.5p1
+
+## 7. CVE-2021-41617 (OpenSSH 8.5p1) 7.8 (Alto) 
+Elevación de privilegios. Privesc a través de sshd. Compleja de explotar
 
 ## 8. CVE-2019-16905 (2019)
 - **CVSS:** 6.8 (Medio)
