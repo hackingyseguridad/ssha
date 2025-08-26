@@ -16,8 +16,8 @@ Ejecución de código. Ejecución arbitraria en el cliente. Moderadamente fácil
 ### 5. CVE-2019-6111 (OpenSSH hasta 7.9) 5.7 (Medio)
 Sobrescritura de archivos. Permite sobrescribir archivos arbitrarios. Requiere interacción del usuario
 
-### 6. 
-
+### 6. CVE-2023-38408 (OpenSSH versiones específicas) 5.9 (Medio)
+Elevación de privilegios. Impacto: Privesc en sistemas específicos. Facilidad: Compleja de explotar
 
 ### 7. CVE-2021-41617 (OpenSSH 8.5p1) 7.8 (Alto) 
 Elevación de privilegios. Privesc a través de sshd. Compleja de explotar
@@ -25,29 +25,12 @@ Elevación de privilegios. Privesc a través de sshd. Compleja de explotar
 ### 8. CVE-2019-16905 (OpenSSH 7.7 - 7.9) 6.8 (Medio)
 Denegación de servicio. Crash del servicio SSH. Fácil de explotar
 
-## 9. CVE-2020-14145 (2020)
-- **CVSS:** 4.3 (Medio)
-- **Tipo:** Filtración de información
-- **Impacto:** Revela información del servidor
-- **Facilidad:** Fácil
-- **Afecta:** OpenSSH hasta 8.3
+### 9. CVE-2020-14145 (OpenSSH hasta 8.3) 4.3 (Medio)
+Filtración de información. Revela información del servidor. Fácil
 
-## 10. CVE-2018-15919 (2018)
-- **CVSS:** 5.3 (Medio)
-- **Tipo:** Denegación de servicio
-- **Impacto:** Crash del servicio SSH
-- **Facilidad:** Moderadamente fácil
-- **Afecta:** OpenSSH 7.8
-
-
-¿Necesitas detalles específicos sobre alguna de estas vulnerabilidades o medidas de mitigación particulares?
-
-
-
-CVE-2025-26465. Es muy antigua, de finales de 2014, OpenSSH 6.8p1. Si la opción VerifyHostKeyDNS está habilitada, permite a un atacante lanzar este tipo de ataque.
-
-CVE-2025-26466 OpenSSH 9.5p1, agosto de 2023. Fallo de denegación de servicio. Ocurre durante el intercambio de claves, debido a una asignación de memoria sin restricciones. 
-
+### 10. CVE-2018-15919 (OpenSSH 7.8) 5.3 (Medio) 
+Denegación de servicio. Crash del servicio SSH.  Moderadamente fácil de explotar
+ 
 ## Utilidades de explotacion SSH 
 
 <img style="float:left" alt="netspy logo" src="https://github.com/hackingyseguridad/ssha/blob/master/ssh.png">
