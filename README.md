@@ -1,14 +1,21 @@
-# Utilidades de explotacion SSH 
+
+## Vulnerabilidades SSH 
+
+La primera vulnerabilidad, la que permite un ataque Man-in-the-Middle, ha sido registrada como CVE-2025-26465. Es muy antigua, puesto que está presente desde finales de 2014, hace ya más de 10 años. Apareció con el lanzamiento de OpenSSH 6.8p1. Hasta ahora no ha sido detectado el problema. Si la opción VerifyHostKeyDNS está habilitada, permite a un atacante lanzar este tipo de ataque.
+
+CVE-2025-26466 OpenSSH 9.5p1, agosto de 2023. Fallo de denegación de servicio. Ocurre durante el intercambio de claves, debido a una asignación de memoria sin restricciones. 
+
+## Utilidades de explotacion SSH 
 
 <img style="float:left" alt="netspy logo" src="https://github.com/hackingyseguridad/ssha/blob/master/ssh.png">
 
-# sshd_config
+## sshd_config
 
 Configuracion segura del servidor SSHd
 
 https://raw.githubusercontent.com/hackingyseguridad/ssha/master/configuracion.txt
 
-# ssha.sh
+## ssha.sh
 
 ssha usuario@IP  opciones del cliente para cifrados obsoletos, single method diffie-hellman-group1-sha1
 
@@ -18,11 +25,11 @@ sshc opciones del cliente para cifrados obsoletos
 
 https://www.openssh.com/legacy.html
 
-# sshscan.sh
+## sshscan.sh
 
 Escanea puertos SSH accesibles
 
-# Comandos SSH habituales
+## Comandos SSH habituales
 
 1. Conexión SSH estándar
 
@@ -60,30 +67,31 @@ ssh -FN -R <remote-port>:localhost:22 usuario@hostIP
 
 scp -rP 3000  /path/to/local-dir usuario@hostIP:/path/to/remote-dir
 
-# scanciphers.sh
+## scanciphers.sh
 
 Muestra los cifrados ofrecidos
 
 <img style="float:left" alt="netspy logo" src="https://github.com/hackingyseguridad/ssha/blob/master/SSH.png">
 
-# usuariossh.py
+## usuariossh.py
 
 Comprueba existencia de usuario en ip con SSH activo.
 Explotar vulnerabilidad 2018-15473 OpenSSH 2.3 < 7.7 Username Enumeration.
 
-# sshusers.sh
+## sshusers.sh
 
 Muestra usuarios existentes en SSH, con diccionario usuarios.txt. 
 Explotar vulnerabilidad 2018-15473 OpenSSH 2.3 < 7.7 Username Enumeration
 
-# brutessh.sh
+## brutessh.sh
 
 sh brutessh.sh IP 
 
 Test para intentar obtener credenciales de acceso a SSH con diccionario usuarios.txt y claves.txt
 
 
-www.hackingyseguridad.com
+http://www.hackingyseguridad.com/
+
 
 
 
