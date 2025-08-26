@@ -13,12 +13,8 @@ Filtración de información. Filtra hasta 64KB de memoria del cliente.  Explotac
 ### 4. CVE-2020-15778 (OpenSSH hasta 8.3p1)  6.8 (Medio) 
 Ejecución de código. Ejecución arbitraria en el cliente. Moderadamente fácil de explotar
 
-## 5. CVE-2019-6111 (2019)
-- **CVSS:** 5.7 (Medio)
-- **Tipo:** Sobrescritura de archivos
-- **Impacto:** Permite sobrescribir archivos arbitrarios
-- **Facilidad:** Requiere interacción del usuario
-- **Afecta:** OpenSSH hasta 7.9
+### 5. CVE-2019-6111 (OpenSSH hasta 7.9) 5.7 (Medio)
+Sobrescritura de archivos. Permite sobrescribir archivos arbitrarios. Requiere interacción del usuario
 
 ## 6. CVE-2023-38408 (2023)
 - **CVSS:** 5.9 (Medio)
