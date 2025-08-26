@@ -1,18 +1,14 @@
 
 ## top 10 vulnerabilidades SSH 
 
-### 1. CVE-2024-6387 - "regreSSHion" (2024) 9.8 (Crítico) 
-Ejecución remota de código, permite RCE como root. Explotación relativamente sencilla. OpenSSH 8.5p1 - 9.7p1
+### 1. CVE-2024-6387 - "regreSSHion" ( OpenSSH 8.5p1 - 9.7p1) 9.8 (Crítico) 
+Ejecución remota de código, permite RCE como root. Explotación relativamente sencilla.
 
-### 2. CVE-2018-15473 (2018) 5.3 (Medio)
-Filtración de información. Revela nombres de usuario válidos. Muy fácil de explotar. OpenSSH 7.7 y anteriores
+### 2. CVE-2018-15473 (OpenSSH 7.7 y anteriores) 5.3 (Medio)
+Filtración de información. Revela nombres de usuario válidos. Muy fácil de explotar. 
 
-## 3. CVE-2016-0777 (2016)
-- **CVSS:** 4.0 (Medio)
-- **Tipo:** Filtración de información
-- **Impacto:** Filtra hasta 64KB de memoria del cliente
-- **Facilidad:** Explotación sencilla
-- **Afecta:** OpenSSH 5.4 - 7.1
+### 3. CVE-2016-0777 (OpenSSH 5.4 - 7.1) 4.0 (Medio)
+Filtración de información. Filtra hasta 64KB de memoria del cliente.  Explotación sencilla
 
 ## 4. CVE-2020-15778 (2020)
 - **CVSS:** 6.8 (Medio)
