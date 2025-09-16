@@ -12,4 +12,4 @@ echo
 echo "..."
 sh /home/antonio/ssha/actualizar.sh
 
-msfconsole -q -x "use auxiliary/scanner/ssh/ssh_enumusers; set RHOSTS 192.168.1.1; set USER_FILE /home/antonio/ssha/usuarios.txt; run"
+msfconsole -q -x "use auxiliary/scanner/ssh/ssh_enumusers; set RHOSTS 192.168.1.1;  set RPORT 2022; set USER_FILE /home/antonio/ssha/usuarios.txt; run"
