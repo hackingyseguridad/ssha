@@ -3,7 +3,8 @@
 # OpenSSH < 7.7 - User Enumeration
 # Descargar diccionario de usuarios
 # sh /home/antonio/ssha/actualizar.sh
-echo " # # # Descubre usuarios"
+
+echo " # # # Descubre usuarios # # #"
 echo "uso.: ./usuarios.sh IP puerto"
 echo
 
