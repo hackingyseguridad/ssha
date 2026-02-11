@@ -1,0 +1,2 @@
+
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes128-cbc,3des-cbc -oHostKeyAlgorithms=+ssh-rsa $1 $2 $3 $4 $5
