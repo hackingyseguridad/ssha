@@ -1,2 +1,10 @@
+# 
+# ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes128-cbc,3des-cbc -oHostKeyAlgorithms=+ssh-rsa $1 $2 $3 $4 $5
+#
 
-ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes128-cbc,3des-cbc -oHostKeyAlgorithms=+ssh-rsa $1 $2 $3 $4 $5
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1,diffie-hellman-group-exchange-sha1 \
+    -oHostKeyAlgorithms=+ssh-rsa \
+    -c aes128-cbc,3des-cbc \
+    -oMACs=+hmac-sha1 \
+    admin@$1 $2 $3
+
