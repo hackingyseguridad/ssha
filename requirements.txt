@@ -6,5 +6,5 @@ idna==2.7
 paramiko==2.4.1
 pyasn1==0.4.4
 pycparser==2.18
-PyNaCl==1.2.1
+PyNaCl==1.6.2
 six==1.11.0
