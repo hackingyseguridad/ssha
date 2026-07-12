@@ -1,11 +1,8 @@
+![banner](https://github.com/hackingyseguridad/ssha/raw/master/banner.png)
 
 # ssha — Utilidades y herramientas de explotación y auditoría SSH
 
 Colección de scripts en **Bash**, **Python**, **C** y **Lua (NSE)** para auditar, escanear y poner a prueba la seguridad de servicios SSH: explotación de CVEs conocidas, fuerza bruta de credenciales, enumeración de usuarios, auditoría de cifrados/configuración y utilidades de post-explotación (túneles, C2 sobre SSH).
-
-Proyecto original: [hackingyseguridad.com](http://www.hackingyseguridad.com/) · [github.com/hackingyseguridad/ssha](https://github.com/hackingyseguridad/ssha)
-
-> ⚠️ **Aviso legal:** estas herramientas están pensadas exclusivamente para auditorías de seguridad autorizadas, laboratorios propios (CTF, entornos de prueba) o programas de *bug bounty* que permitan expresamente este tipo de pruebas. Explotar o forzar credenciales de un servidor SSH sin autorización explícita del propietario puede constituir un delito. El uso de estas herramientas es responsabilidad exclusiva de quien las ejecuta.
 
 ---
 
