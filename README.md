@@ -303,20 +303,16 @@ scp -rP 3000 /path/to/local-dir usuario@hostIP:/path/to/remote-dir
 
 ---
 
-## Más información sobre SSH
+## referencias
 
-- **Protocolo**: SSH (Secure Shell) opera por defecto en el puerto **22/TCP**, negocia el intercambio de claves (KEX), la autenticación (clave pública, contraseña, teclado interactivo, GSSAPI) y cifra el canal mediante algoritmos simétricos (AES-GCM, ChaCha20-Poly1305 en implementaciones modernas).
-- **Superficie de ataque típica**: banner/versión desactualizada, algoritmos de cifrado o KEX obsoletos (SSH-1, `diffie-hellman-group1-sha1`, `arcfour`), autenticación por contraseña habilitada sin límite de intentos, login root permitido, claves privadas débiles o filtradas, `AuthorizedKeysCommand` mal configurado.
-- **Fuentes de referencia recomendadas**:
-  - [OpenSSH — Legacy Options](https://www.openssh.com/legacy.html)
-  - [ssh-audit (jtesta)](https://github.com/jtesta/ssh-audit)
-  - [Terrapin Attack — terrapin-attack.com](https://terrapin-attack.com/)
-  - [NVD — National Vulnerability Database](https://nvd.nist.gov/)
+[OpenSSH — Legacy Options](https://www.openssh.com/legacy.html)
 
----
+[ssh-audit (jtesta)](https://github.com/jtesta/ssh-audit)
 
+[Terrapin Attack — terrapin-attack.com](https://terrapin-attack.com/)
 
----
+[NVD — National Vulnerability Database](https://nvd.nist.gov/)
+
 [hackingyseguridad.com](http://www.hackingyseguridad.com/)
 
 [github.com/hackingyseguridad/ssha](https://github.com/hackingyseguridad/ssha)
