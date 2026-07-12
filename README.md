@@ -24,6 +24,22 @@ Colección de scripts en **Bash**, **Python**, **C** y **Lua (NSE)** para audita
 
 ---
 
+| Categoría | Scripts | Naturaleza |
+|---|---|---|
+| Auditoría de configuración/cifrados | `scanciphers.sh`, `ssh-audit.sh`, `sshaudit.sh`, `ssh_cifrados_vulnerables.md` | No intrusiva |
+| Versión / fingerprint del servidor | `versionssh.sh`, `verssh.sh`, `verserverkeys.sh` | No intrusiva |
+| Detección de Terrapin Attack | `terapinscan.sh`, `Terrapin_Scanner_Linux_amd64/i386` | No intrusiva (solo detecta) |
+| Escaneo de hosts/puertos | `sshscan.sh`, `sshscan2.sh`, `nmapxsalto.sh` | Reconocimiento |
+| Logs y monitorización (lado servidor propio) | `verlogssh.sh`, `verconexiones.sh` | Defensivo |
+| Hardening / configuración segura | `sshd_config`, `configuracion.txt`, `sshguard.conf` | Defensivo |
+| Enumeración de usuarios (CVE-2018-15473, CVE-2016-6210) | `usuariossh.py`, `sshusers.sh`, `usuarios_ssh.sh`, `sshuserslist.sh`, `ssh-username-enum.py`, `CVE-2016-6210.py` | Ofensivo — requiere autorización |
+| Fuerza bruta de credenciales | `brutessh*.sh`, `brutesshmasivo.sh`, `sshpass.sh` | Ofensivo — requiere autorización |
+| PoC de RCE / inyección de comandos | `CVE-2024-6387.py/.nse/.c`, `CVE-2020-15778_exploit.sh`, `cve_2020_15778.py`, otros `CVE-*.sh/.py` | Ofensivo — requiere autorización explícita y contexto de laboratorio/pentest contratado |
+| Post-explotación (túneles/C2) | `tuneles_ssh.md`, `tunel_panel_c2.sh`, `claveprivada.sh`, `ssh_claveprivada.sh` | Ofensivo — solo en engagements con alcance definido |
+| Clientes legacy | `ssha`, `sshb`, `sshc`, `sshd` (wrappers) | Compatibilidad, no ofensivo per se |
+
+---
+
 ## Requisitos e instalación
 
 ```bash
