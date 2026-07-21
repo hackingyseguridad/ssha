@@ -1,15 +1,3 @@
----
-title: "Cisco SSH 1.25 — Auditoría Ofensiva y Enumeración de Usuarios"
-author: "@antonio_taboada"
-date: 2024
-license: "GPL-3.0"
-categories:
-  - ssh
-  - pentesting
-  - cisco
-  - enumeration
-  - vulnerability-analysis
----
 
 ### Cisco SSH 1.25 — Auditoría Ofensiva y Técnicas de Explotación
 
@@ -521,9 +509,18 @@ ncrack                  # Otro fuzzer SSH
 **La enumeración de usuarios es el primer paso** para obtener acceso a routers/switches Cisco en redes empresariales. Esto hace que **actualizar SSH sea CRÍTICO** en cualquier auditoría de seguridad.
 
 ---
+title: "Cisco SSH 1.25 — Auditoría Ofensiva y Enumeración de Usuarios"
+author: "@antonio_taboada"
+date: 2024
+license: "GPL-3.0"
+categories:
+  - ssh
+  - pentesting
+  - cisco
+  - enumeration
+  - vulnerability-analysis
+---
 
-**Autor:** @antonio_taboada  
-**Web:** hackingyseguridad.com  
-**Licencia:** GPL-3.0  
-**Última actualización:** 2024
-
+#
+http://www.hackingyseguridad.com/
+#
