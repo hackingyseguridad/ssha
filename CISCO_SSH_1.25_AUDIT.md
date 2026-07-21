@@ -11,9 +11,9 @@ categories:
   - vulnerability-analysis
 ---
 
-# Cisco SSH 1.25 — Auditoría Ofensiva y Técnicas de Explotación
+###& Cisco SSH 1.25 — Auditoría Ofensiva y Técnicas de Explotación
 
-## 1. Introducción: ¿Por qué Cisco SSH 1.25 es vulnerable?
+#### 1. Introducción: Cisco SSH 1.25 
 
 **Cisco SSH 1.25** es una versión extremadamente antigua del demonio SSH, datada en el período 1998-2001. A diferencia de OpenSSH (que sí es software de código abierto parcheado regularmente), Cisco SSH 1.25 presenta vulnerabilidades inherentes al protocolo SSH v1 y a su implementación cerrada.
 
@@ -29,7 +29,7 @@ categories:
 
 ---
 
-## 2. Vulnerabilidades Específicas de Cisco SSH 1.25
+### 2. Vulnerabilidades Específicas de Cisco SSH 1.25
 
 ### 2.1 — Timing Attack / Timing Analysis (CVSS 5.3)
 
@@ -255,7 +255,7 @@ tcpdump -i eth0 -w ssh_traffic.pcap 'tcp port 22'
 
 ---
 
-## 4. Plan de Auditoría: Fase a Fase
+### 4. Plan de Auditoría: Fase a Fase
 
 ### Fase 1: Reconocimiento (5 minutos)
 
@@ -312,7 +312,7 @@ show ip route
 
 ---
 
-## 5. Herramientas Suministradas
+### 5. Herramientas Suministradas
 
 ### 5.1 — ssh-username-enum-cisco.py
 
@@ -385,7 +385,7 @@ chmod +x cisco-ssh-enum.sh
 
 ---
 
-## 6. Estimación de Éxito
+### 6. Estimación de Éxito
 
 | Escenario | Probabilidad | Tiempo |
 |-----------|-------------|--------|
@@ -396,7 +396,7 @@ chmod +x cisco-ssh-enum.sh
 
 ---
 
-## 7. Limitaciones y Consideraciones
+### 7. Limitaciones y Consideraciones
 
 ### 7.1 — Factores que pueden afectar
 
@@ -439,7 +439,7 @@ iptables -A INPUT -p tcp --dport 22 -j DROP
 
 ---
 
-## 8. Legales y Éticas
+### 8. Legales y Éticas
 
 ⚠️ **ADVERTENCIA LEGAL:**
 
@@ -508,7 +508,7 @@ ncrack                  # Otro fuzzer SSH
 
 ---
 
-## 10. Conclusión
+### 10. Conclusión
 
 **Cisco SSH 1.25 es extremadamente vulnerable** por razones inherentes:
 
