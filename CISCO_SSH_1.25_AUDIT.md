@@ -11,7 +11,7 @@ categories:
   - vulnerability-analysis
 ---
 
-###& Cisco SSH 1.25 — Auditoría Ofensiva y Técnicas de Explotación
+### Cisco SSH 1.25 — Auditoría Ofensiva y Técnicas de Explotación
 
 #### 1. Introducción: Cisco SSH 1.25 
 
