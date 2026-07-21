@@ -1,4 +1,3 @@
-
 #!/bin/sh
 # hacking y seguridad .COM 2023
 echo "Instalando .."
@@ -12,4 +11,7 @@ cp sshb /sbin
 chmod 777 /sbin/sshb
 cp sshc /sbin
 chmod 777 /sbin/sshc
+
+
+chmod 777 *.sh
 
