@@ -26,7 +26,7 @@ msfconsole -q -x "
 use auxiliary/scanner/ssh/ssh_enumusers;
 set RHOSTS $1;
 set RPORT 22;
-set USER_FILE /home/antonio/ssha/usuarios.txt;
+set USER_FILE usuarios.txt;
 run;
 exit;
 "
