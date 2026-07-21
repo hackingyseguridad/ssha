@@ -18,7 +18,7 @@ echo
 
 if [ -z "$1" ]; then
     echo "Uso: $0 <IP>"
-    echo "Ejemplo: $0 192.168.1.100"
+    echo "Ejemplo: $0 45.55.58.7"
     exit 1
 fi
 
