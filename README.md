@@ -313,7 +313,7 @@ scp -rP 3000 /path/to/local-dir usuario@hostIP:/path/to/remote-dir
 
 [hackingyseguridad.com](http://www.hackingyseguridad.com/)
 
-[Exploits Mataesploit](https://github.com/hackingyseguridad/ssha/blob/master/exploits_ssh_metasploit.md)a)
+[Exploits Mataesploit](https://github.com/hackingyseguridad/ssha/blob/master/exploits_ssh_metasploit.md)
 
 
 # 
