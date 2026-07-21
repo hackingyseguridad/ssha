@@ -1,12 +1,12 @@
 ![banner](https://github.com/hackingyseguridad/ssha/raw/master/banner.png)
 
-# ssha — Utilidades y herramientas de explotación y auditoría SSH
+### ssha — Utilidades y herramientas de explotación y auditoría SSH
 
 Colección de scripts en **Bash**, **Python**, **C** y **Lua (NSE)** para auditar, escanear y poner a prueba la seguridad de servicios SSH: explotación de CVEs conocidas, fuerza bruta de credenciales, enumeración de usuarios, auditoría de cifrados/configuración y utilidades de post-explotación (túneles, C2 sobre SSH).
 
 ---
 
-## Tabla de contenidos
+### Tabla de contenidos
 
 - [Requisitos e instalación](#requisitos-e-instalación)
 - [Estructura del repositorio](#estructura-del-repositorio)
@@ -19,8 +19,6 @@ Colección de scripts en **Bash**, **Python**, **C** y **Lua (NSE)** para audita
 - [Configuración segura de referencia](#configuración-segura-de-referencia)
 - [Comandos SSH habituales](#comandos-ssh-habituales)
 - [Más información sobre SSH](#más-información-sobre-ssh)
-- [Buenas prácticas de defensa](#buenas-prácticas-de-defensa)
-- [Licencia](#licencia)
 
 ---
 
@@ -40,7 +38,7 @@ Colección de scripts en **Bash**, **Python**, **C** y **Lua (NSE)** para audita
 
 ---
 
-## Requisitos e instalación
+### Requisitos e instalación
 
 ```bash
 git clone https://github.com/hackingyseguridad/ssha
@@ -70,7 +68,7 @@ sh actualizar.sh
 
 ---
 
-## Estructura del repositorio
+### Estructura del repositorio
 
 ```
 ssha/
@@ -99,7 +97,7 @@ ssha/
 
 ---
 
-## Tabla resumen: top vulnerabilidades SSH más fáciles de explotar
+### Tabla resumen: top vulnerabilidades SSH más fáciles de explotar
 
 Basada en el ranking del propio repositorio, ordenada por severidad/CVSS. La columna **Facilidad** refleja la valoración original del proyecto.
 
@@ -130,7 +128,7 @@ Basada en el ranking del propio repositorio, ordenada por severidad/CVSS. La col
 
 ---
 
-## Scripts de explotación por CVE
+### Scripts de explotación por CVE
 
 ### `CVE-2024-6387.py` / `CVE-2024-6387.nse` / `cve-2024-6387.c` — regreSSHion
 
@@ -178,7 +176,7 @@ sh terapinscan.sh <IP> <puerto>
 
 ---
 
-## Scripts de fuerza bruta
+### Scripts 
 
 ### `brutessh.sh`, `brutessh1.sh` … `brutessh8.sh`
 
@@ -204,7 +202,7 @@ Utilidad de apoyo basada en `sshpass` para automatizar conexiones SSH con contra
 
 ---
 
-## Scripts de enumeración de usuarios
+### Scripts de enumeración de usuarios
 
 | Script | Descripción |
 |---|---|
@@ -221,7 +219,7 @@ sh sshusers.sh <IP> usuarios.txt
 
 ---
 
-## Scripts de escaneo y auditoría
+### Scripts de escaneo y auditoría
 
 | Script | Descripción |
 |---|---|
@@ -243,7 +241,7 @@ sh versionssh.sh <IP>
 
 ---
 
-## Utilidades de post-explotación y túneles
+### Utilidades de post-explotación y túneles
 
 - **`claveprivada.sh` / `ssh_claveprivada.sh`** — pruebas/gestión de autenticación mediante clave privada (por ejemplo, comprobar si una clave filtrada da acceso a un host).
 - **`tuneles_ssh.md`** — documentación de técnicas de *tunneling* SSH (reenvío local, remoto y dinámico) aplicables tanto en auditoría como en post-explotación.
@@ -258,7 +256,7 @@ sh versionssh.sh <IP>
 
 ---
 
-## Configuración segura de referencia
+### Configuración segura de referencia
 
 - **`sshd_config`** y **`configuracion.txt`** — plantilla de configuración endurecida para el servidor `sshd` (deshabilitar login root, forzar autenticación por clave, limitar algoritmos a los modernos, etc.):
 
@@ -270,7 +268,7 @@ sh versionssh.sh <IP>
 
 ---
 
-## Comandos SSH habituales
+### Comandos SSH habituales
 
 ```bash
 # 1. Conexión SSH estándar
@@ -303,7 +301,7 @@ scp -rP 3000 /path/to/local-dir usuario@hostIP:/path/to/remote-dir
 
 ---
 
-## referencias
+### referencias
 
 [OpenSSH — Legacy Options](https://www.openssh.com/legacy.html)
 
