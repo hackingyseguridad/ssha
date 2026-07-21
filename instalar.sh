@@ -2,6 +2,7 @@
 # hacking y seguridad .COM 2023
 echo "Instalando .."
 echo
+apt-get install ssh
 apt-get install ncrack
 apt-get install medusa
 apt-get install nmap
