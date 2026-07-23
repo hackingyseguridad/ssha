@@ -320,3 +320,8 @@ scp -rP 3000 /path/to/local-dir usuario@hostIP:/path/to/remote-dir
 https://www.hackingyseguridad.com/
 #
 
+---
+
+#
+![@antonio_taboada](https://github.com/hackingyseguridad/ssha/blob/master/autor.png)
+#
